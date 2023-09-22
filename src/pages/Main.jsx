@@ -4,12 +4,12 @@ import { useState } from 'react';
 import { SlArrowDown } from 'react-icons/sl';
 
 const MainContainer = styled.div`
-    height: 90vh;
+    height: 100vh;
     background-color: #F5F5F5;
     position: relative;
 `
 const MainSize = styled.div`
-    max-width: 1400px;
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
 
@@ -44,7 +44,7 @@ const ImgCasaMain = styled.img`
     z-index: 0;
     right: 0;
     bottom: 10%;
-    width: 50%;
+    width: 53%;
 `
 const DivTabsBuyRent = styled.div`
     position: relative;
@@ -71,7 +71,7 @@ const ContentContainer = styled.div`
   justify-content: space-between;
   background-color: ${({ active }) => (active ? '#FEFEFF' : 'transparent')};
   box-shadow: ${({ active }) => (active ? 'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;' : 'none')};
-  width: 900px;
+  width: 800px;
   z-index: 1; 
   padding: 2rem;
 `;

@@ -6,7 +6,7 @@ const HeaderP = styled.header `
     background-color: #F5F5F5;
 `
 const HeaderContainer = styled.div`
-    max-width: 1400px;
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
 

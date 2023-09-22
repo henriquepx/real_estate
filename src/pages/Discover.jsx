@@ -6,8 +6,9 @@ import home2 from '../assets/home2.png';
 import home3 from '../assets/home3.png';
 
 const DiscoverContainer = styled.div`
-    height: 80vh;
+    height: 100%;
     background-color: #fff;
+    padding: 5rem 0rem;
 `
 const TitleDiscover = styled.h1`
     color: var(--color-title);
@@ -29,7 +30,6 @@ const DiscoverSize = styled.div`
 
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
 `
 const TextDiscover = styled.div`
     display: flex;
