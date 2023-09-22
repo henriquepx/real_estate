@@ -16,12 +16,6 @@ const MainSize = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
-    h2 {
-        color: var(--color-green);
-        font-weight: 450;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-    }
     h1 {
         color: var(--color-title);
         font-weight: 550;
@@ -37,6 +31,13 @@ const MainSize = styled.div`
         margin-top: 3rem;
     }
 
+`
+const TitlePage = styled.h2`
+    color: var(--color-green);
+        font-weight: 450;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin-left: 1.5rem;
 `
 const ImgCasaMain = styled.img`
     position: absolute;
@@ -107,7 +108,7 @@ const Main = () => {
   return (
       <MainContainer>
           <MainSize>
-              <h2>Real Estate</h2>
+              <TitlePage>Real Estate</TitlePage>
               <h1>Let`s hunt for your dream residence</h1>
               <p>Explore our range of beautiful properties with the addition of separate accommodation suitable for you.</p>
               <DivTabsBuyRent>

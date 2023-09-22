@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
     :root {
     --color-green: #4ca484;
     --color-title: #002652;
-    --color-description: #505050;
+    --color-description: #73788C;
     --font: 'Poppins', sans-serif;
     --font2: 'Montserrat', sans-serif;
 }
