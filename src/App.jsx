@@ -3,6 +3,7 @@ import Advent from "./pages/Advent"
 import Discover from "./pages/Discover"
 import Header from "./pages/Header"
 import Main from "./pages/Main"
+import Testimonial from "./pages/Testimonial"
 import GlobalStyle from "./styles/globalStyles"
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Discover />
       <Advent />
       <About />
+      <Testimonial />
     </>
   )
 }
