@@ -2,6 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     :root {
+    --color-green: #4ca484;
+    --color-title: #002652;
+    --color-description: #505050;
     --font: 'Poppins', sans-serif;
     --font2: 'Montserrat', sans-serif;
 }
