@@ -1,3 +1,4 @@
+import About from "./pages/About"
 import Advent from "./pages/Advent"
 import Discover from "./pages/Discover"
 import Header from "./pages/Header"
@@ -12,6 +13,7 @@ function App() {
       <Main />
       <Discover />
       <Advent />
+      <About />
     </>
   )
 }

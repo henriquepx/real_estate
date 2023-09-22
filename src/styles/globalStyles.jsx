@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     :root {
-    --color-green: #4ca484;
+    --color-green: #69B99D;
     --color-title: #002652;
     --color-description: #73788C;
     --font: 'Poppins', sans-serif;
