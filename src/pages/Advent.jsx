@@ -10,6 +10,10 @@ import star from '../assets/star.png';
 const AdventContainer = styled.div`
     height: 80vh;
     background-color: #F5F5F5;
+    @media (max-width: 1024px) {
+        height: 100%;
+        padding: 3rem 0rem;
+    }
 `
 const TitleAdvent = styled.h1`
     color: var(--color-title);
@@ -39,6 +43,12 @@ const WrapAdvents = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
     margin-left: 2rem;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+    }
 `
 
 const Advent = () => {

@@ -14,6 +14,13 @@ const FooterSize = styled.div`
 
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+    @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+    }
 `
 const DivFooter1 = styled.div`
     img {
