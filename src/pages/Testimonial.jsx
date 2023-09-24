@@ -13,12 +13,19 @@ const TestimonialSize = styled.div`
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 1440px) {
+        padding: 0rem 1.2rem;
+    }
 `
 const TitleTestimonial = styled.h1`
     color: var(--color-title);
     font-weight: 550;
     font-size: 3rem;
     margin: 3rem 0rem 2rem 0rem;
+    @media (max-width: 670px) {
+        margin: 3rem 0rem 0rem 0rem;
+    }
 `
 const SubtitleTestimonial = styled.h2`
     color: var(--color-green);
@@ -30,6 +37,10 @@ const SubtitleTestimonial = styled.h2`
 const TextDiscover = styled.div`
     display: flex;
     justify-content: space-between;
+    @media (max-width: 670px) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 `
 const LearnMore = styled.a`
     display: flex;
@@ -37,6 +48,9 @@ const LearnMore = styled.a`
     gap: 10px;
     margin-top: 1rem;
     cursor: pointer;
+    @media (max-width: 670px) {
+        margin-bottom: 3rem;
+    }
     p {
         color: var(--color-green);
         font-weight: 500;

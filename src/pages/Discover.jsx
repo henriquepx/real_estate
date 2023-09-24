@@ -15,6 +15,9 @@ const TitleDiscover = styled.h1`
     font-weight: 550;
     font-size: 3rem;
     margin: 3rem 0rem 2rem 0rem;
+    @media (max-width: 500px) {
+        text-align: center
+    }
 `
 const SubtitleDiscover = styled.h2`
     color: var(--color-green);
@@ -22,6 +25,9 @@ const SubtitleDiscover = styled.h2`
     font-size: 1.3rem;
     text-transform: uppercase;
     margin-left: 1.5rem;
+    @media (max-width: 500px) {
+        text-align: center
+    }
 `
 const DiscoverSize = styled.div`
     max-width: 1400px;
@@ -30,13 +36,16 @@ const DiscoverSize = styled.div`
 
     display: flex;
     flex-direction: column;
+    @media (max-width: 1440px) {
+        padding-left: 1.2rem;
+    }
 `
 const TextDiscover = styled.div`
     display: flex;
     justify-content: space-between;
-    p {
-        color: var(--color-description);
-        max-width: 50ch;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 `
 const LearnMore = styled.a`
@@ -45,6 +54,9 @@ const LearnMore = styled.a`
     gap: 10px;
     margin-top: 1rem;
     cursor: pointer;
+    @media (max-width: 670px) {
+        margin-bottom: 3rem;
+    }
     p {
         color: var(--color-green);
         font-weight: 500;
@@ -68,11 +80,15 @@ const WhiteIcon = styled(SlArrowRight)`
 const HomeContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 
     margin-top: 3rem;
+    overflow-x: hidden;
+    max-width: 100%;
 `
 
 const Discover = () => {
+    
   return (
       <DiscoverContainer>
           <DiscoverSize>
@@ -112,6 +128,39 @@ const Discover = () => {
                       price='$40,000'
                       size='360m² Living area'
                   />
+                  <House
+                      img={home1}
+                      title='Perum griya asri'
+                      alt='Imagem da primeira casa'
+                      location='Bogor, Jawa Barat'
+                      price='$25,000'
+                      size='360m² Living area'
+                  />
+                  <House
+                      img={home1}
+                      title='Perum griya asri'
+                      alt='Imagem da primeira casa'
+                      location='Bogor, Jawa Barat'
+                      price='$25,000'
+                      size='360m² Living area'
+                  />
+                  <House
+                      img={home1}
+                      title='Perum griya asri'
+                      alt='Imagem da primeira casa'
+                      location='Bogor, Jawa Barat'
+                      price='$25,000'
+                      size='360m² Living area'
+                  />
+                  <House
+                      img={home1}
+                      title='Perum griya asri'
+                      alt='Imagem da primeira casa'
+                      location='Bogor, Jawa Barat'
+                      price='$25,000'
+                      size='360m² Living area'
+                  />
+                  
               </HomeContainer>
           </DiscoverSize>
     </DiscoverContainer>

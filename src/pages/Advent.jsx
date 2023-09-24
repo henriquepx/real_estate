@@ -12,7 +12,7 @@ const AdventContainer = styled.div`
     background-color: #F5F5F5;
     @media (max-width: 1024px) {
         height: 100%;
-        padding: 3rem 0rem;
+        padding: 3rem 1rem;
     }
 `
 const TitleAdvent = styled.h1`
@@ -21,6 +21,9 @@ const TitleAdvent = styled.h1`
     max-width: 15ch;
     font-size: 3rem;
     margin: 3rem 0rem 2rem 0rem;
+    @media (max-width: 500px) {
+        text-align: center;
+    }
 `
 const SubtitleAdvent = styled.h2`
     color: var(--color-green);
@@ -28,6 +31,9 @@ const SubtitleAdvent = styled.h2`
     font-size: 1.3rem;
     text-transform: uppercase;
     margin-left: 1.5rem;
+    @media (max-width: 500px) {
+        text-align: center;
+    }
 `
 const AdventSize = styled.div`
     max-width: 1400px;

@@ -16,6 +16,11 @@ const AboutSize = styled.div`
     display: flex;
     align-items: center;
     gap: 50px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        padding: 0rem 1.2rem;
+    }
 `
 const TitleAbout = styled.h1`
     color: var(--color-title);
@@ -131,7 +136,7 @@ const About = () => {
                   </FaixaAbou2>
               </ImgHouseAbout>
               <TextAbout>
-                <SubtitleAbout>Our advent</SubtitleAbout>
+                <SubtitleAbout>About us</SubtitleAbout>
                 <TitleAbout>How much is your property worth now?</TitleAbout>
                 <p>We have built our reputation as true local area experts. We have gained more knowledge about buyer interests, our neighborhood and the market than any other brand because we live locally and work for local people.</p>
                 <ButtonAbout href="#">Learn more</ButtonAbout>

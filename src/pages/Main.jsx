@@ -85,6 +85,7 @@ const DropDownMain = styled.div`
         align-items: center;
         gap: 10px;
         margin-top: .5rem;
+        cursor: pointer;
     }
     h3 {
         color: #a8a8a8;
@@ -141,7 +142,28 @@ const Main = () => {
                       <ButtonBuscar>Search</ButtonBuscar>
                 </ContentContainer>
                 <ContentContainer active={activeTab === 'Rent'}>
-                    <p>Content for Rent option goes here.</p>
+                <DropDownMain>
+                          <h2>Location</h2>
+                          <div>
+                              <h3>Rio de Janeiro, RJ</h3>
+                              <SlArrowDown />
+                          </div>
+                      </DropDownMain>
+                      <DropDownMain>
+                          <h2>Type</h2>
+                          <div>
+                              <h3>Home</h3>
+                              <SlArrowDown />
+                          </div>
+                    </DropDownMain>
+                    <DropDownMain>
+                          <h2>Price Range</h2>
+                          <div>
+                              <h3>$200-$350</h3>
+                              <SlArrowDown />
+                          </div>
+                      </DropDownMain>
+                      <ButtonBuscar>Search</ButtonBuscar>
                 </ContentContainer>
               </DivTabsBuyRent>
               <ImgCasaMain src={logoHome} alt="Casa de fundo" />
