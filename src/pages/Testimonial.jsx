@@ -5,6 +5,7 @@ import person1 from '../assets/person1.png';
 import person2 from '../assets/person2.png';
 import person3 from '../assets/person3.png';
 
+
 const TestimonialContaner = styled.div`
     background-color: #fff;
     padding: 5rem 0rem 10rem 0rem;
@@ -37,6 +38,7 @@ const SubtitleTestimonial = styled.h2`
 const TextDiscover = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     @media (max-width: 670px) {
         flex-direction: column;
         justify-content: flex-start;
@@ -48,6 +50,28 @@ const LearnMore = styled.a`
     gap: 10px;
     margin-top: 1rem;
     cursor: pointer;
+    width: 125px;
+    height: 20px;
+
+    font-weight: 500;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: var(--color-green);
+        bottom: -3px;
+        left: 0;
+        transform: scaleX(0);
+        transition: .4s ease-in-out;
+    }
+        &:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
     @media (max-width: 670px) {
         margin-bottom: 3rem;
     }
@@ -121,6 +145,7 @@ const Testimonial = () => {
                       name='Makenna Korsgaard'
                       work='UX Researcher'
                   />
+                  
               </ContainerCommentary>
           </TestimonialSize>
     </TestimonialContaner>

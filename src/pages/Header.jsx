@@ -62,7 +62,7 @@ const MenuHamburger = styled.div`
     height: 3px;
     margin: 5px auto 0px auto;
     transition: all 0.3s ease-in-out;
-    background-color: #505050;
+    background-color: #000000;
     &:nth-child(1) {
       transform: translateY(${props => (props.open ? '8px' : '0')}) rotate(${props => (props.open ? '45deg' : '0')});
     }

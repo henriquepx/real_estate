@@ -54,6 +54,26 @@ const LearnMore = styled.a`
     gap: 10px;
     margin-top: 1rem;
     cursor: pointer;
+
+    font-weight: 500;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: var(--color-green);
+        bottom: -3px;
+        left: 0;
+        transform: scaleX(0);
+        transition: .4s ease-in-out;
+    }
+        &:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
     @media (max-width: 670px) {
         margin-bottom: 3rem;
     }
@@ -81,9 +101,10 @@ const HomeContainer = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 50px;
-
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #000;
     margin-top: 3rem;
-    overflow-x: hidden;
     max-width: 100%;
 `
 
@@ -137,7 +158,7 @@ const Discover = () => {
                       size='360m² Living area'
                   />
                   <House
-                      img={home1}
+                      img={home2}
                       title='Perum griya asri'
                       alt='Imagem da primeira casa'
                       location='Bogor, Jawa Barat'
@@ -145,7 +166,7 @@ const Discover = () => {
                       size='360m² Living area'
                   />
                   <House
-                      img={home1}
+                      img={home3}
                       title='Perum griya asri'
                       alt='Imagem da primeira casa'
                       location='Bogor, Jawa Barat'

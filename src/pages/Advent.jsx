@@ -8,12 +8,9 @@ import graph from '../assets/graph.png';
 import star from '../assets/star.png';
 
 const AdventContainer = styled.div`
-    height: 80vh;
+    height: 100%;
     background-color: #F5F5F5;
-    @media (max-width: 1024px) {
-        height: 100%;
-        padding: 3rem 1rem;
-    }
+    padding: 6rem 1rem;
 `
 const TitleAdvent = styled.h1`
     color: var(--color-title);
@@ -42,7 +39,6 @@ const AdventSize = styled.div`
 
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
 `
 const WrapAdvents = styled.div`
     display: grid;

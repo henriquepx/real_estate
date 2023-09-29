@@ -23,13 +23,13 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.4;
     font-family: 'Poppins', sans-serif;
     ::-webkit-scrollbar {
-        width: 5px; 
+        width: 10px; 
     }
     ::-webkit-scrollbar-thumb {
-        background-color: #dadada;
+        background-color: #797979;
     }
     ::-webkit-scrollbar-track {
-        background-color: #1f1e1e; 
+        background-color: #ffffff; 
     }
 }
   
