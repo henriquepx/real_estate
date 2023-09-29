@@ -18,7 +18,7 @@ const AboutSize = styled.div`
     gap: 50px;
 
     @media (max-width: 1024px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 0rem 1.2rem;
     }
 `
@@ -62,6 +62,10 @@ const FaixaAbou1 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 1024px) {
+        left: 60%;
+        width: 30%;
+    }
     p {
         font-size: 3rem;
         color: var(--color-title);

@@ -15,7 +15,7 @@ const MainSize = styled.div`
 
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    padding: 5rem 1.5rem;
     h1 {
         color: var(--color-title);
         font-weight: 550;
@@ -74,6 +74,11 @@ const ContentContainer = styled.div`
   width: 800px;
   z-index: 1; 
   padding: 2rem;
+  @media (max-width: 850px) {
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+  }
 `;
 const DropDownMain = styled.div`
     h2 {
