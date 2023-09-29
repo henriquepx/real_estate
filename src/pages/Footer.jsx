@@ -10,7 +10,7 @@ const FooterSize = styled.div`
     width: 100%;
     margin: 0 auto;
 
-    padding: 7rem 3rem;
+    padding: 7rem 2rem;
 
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;

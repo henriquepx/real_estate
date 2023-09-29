@@ -15,13 +15,17 @@ const MainSize = styled.div`
 
     display: flex;
     flex-direction: column;
-    padding: 5rem 1.5rem;
+    padding: 5rem 1.5rem 0rem 1.5rem;
     h1 {
         color: var(--color-title);
         font-weight: 550;
         font-size: 4rem;
         max-width: 15ch;
         margin-top: 3rem;
+        @media (max-width: 600px) {
+            font-size: 2rem;
+            margin-top: 1.5rem; 
+        }
     }
     p {
         color: var(--color-description);
@@ -29,22 +33,28 @@ const MainSize = styled.div`
         font-size: 1rem;
         max-width: 55ch;
         margin-top: 3rem;
+        @media (max-width: 600px) {
+            margin-top: 1.5rem; 
+        }
     }
 
 `
 const TitlePage = styled.h2`
     color: var(--color-green);
-        font-weight: 450;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        margin-left: 1.5rem;
+    font-weight: 450;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
 `
 const ImgCasaMain = styled.img`
     position: absolute;
     z-index: 0;
     right: 0;
-    bottom: 10%;
+    bottom: 0%;
     width: 53%;
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
 `
 const DivTabsBuyRent = styled.div`
     position: relative;
@@ -77,7 +87,7 @@ const ContentContainer = styled.div`
   @media (max-width: 850px) {
     flex-direction: column;
     gap: 20px;
-    width: 30%;
+    width: 80%;
   }
 `;
 const DropDownMain = styled.div`
