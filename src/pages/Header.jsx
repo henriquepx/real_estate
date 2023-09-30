@@ -14,7 +14,13 @@ const HeaderContainer = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
+    @media (max-width: 1000px) {
+      padding: 1rem 1.5rem;
+    nav {
+      display: none;
+    }
+  }
 `
 const UlHeader = styled.ul`
     display: flex;
@@ -40,6 +46,9 @@ const DivHeader = styled.div`
         font-weight: 400;
         cursor: pointer;
     }
+    @media (max-width: 1000px) {
+      display: none;
+  }
 `
 const LinkHeaderLogin = styled.a`
     padding: 1rem 3rem;
@@ -56,13 +65,16 @@ const MenuHamburger = styled.div`
   padding: 3px 5px 0px 5px;
   border-radius: 10px;
   z-index: 999;
+  @media (max-width: 1000px) {
+    display: block;
+  }
   span {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto 0px auto;
     transition: all 0.3s ease-in-out;
-    background-color: #000000;
+    background-color: #4ca484;
     &:nth-child(1) {
       transform: translateY(${props => (props.open ? '8px' : '0')}) rotate(${props => (props.open ? '45deg' : '0')});
     }
@@ -73,6 +85,7 @@ const MenuHamburger = styled.div`
       transform: translateY(${props => (props.open ? '-8px' : '0')}) rotate(${props => (props.open ? '-45deg' : '0')});
     }
   }
+  
 `;
 
 const Header = () => {
