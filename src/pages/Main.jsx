@@ -118,7 +118,7 @@ const ButtonBuscar = styled.button`
 `
 
 const Main = () => {
-
+    
     const [activeTab, setActiveTab] = useState(null);
 
     const handleTabClick = (tab) => {
