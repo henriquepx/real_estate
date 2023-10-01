@@ -15,8 +15,11 @@ const MainSize = styled.div`
 
     display: flex;
     flex-direction: column;
-    padding: 3rem 1.5rem 0rem 1.5rem;
+    padding: 10rem 1.5rem 0rem 1.5rem;
     z-index: 10;
+    @media (max-width: 1000px) {
+        padding: 3rem 1.5rem 0rem 1.5rem;
+    }
     h1 {
         color: var(--color-title);
         font-weight: 550;
