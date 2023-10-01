@@ -15,7 +15,7 @@ const MainSize = styled.div`
 
     display: flex;
     flex-direction: column;
-    padding: 5rem 1.5rem 0rem 1.5rem;
+    padding: 3rem 1.5rem 0rem 1.5rem;
     z-index: 10;
     h1 {
         color: var(--color-title);
@@ -54,10 +54,10 @@ const ImgCasaMain = styled.img`
     bottom: 0%;
     width: 53%;
     @media (min-width: 600px) and (max-width: 1000px) {
-        width: 60%;
+        width: 70%;
     }
     @media (max-width: 600px) {
-        width: 90%;
+        width: 100%;
     }
 `
 const DivTabsBuyRent = styled.div`

@@ -25,15 +25,37 @@ const NavLateral = styled.nav`
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding-bottom: 2rem;
     li {
       a {
         font-size: 1.2rem;
-        
+        color: var(--color-title);
+        font-weight: 500;
       }
     }
   }
 `
+const DivLoginLateral = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
+  padding-top: 2rem;
+  border-top: 1px solid #d6d6d6;
+  font-size: 1.1rem;
+  color: var(--color-green);
+  font-weight: 400;
+  cursor: pointer;
+  a {
+    padding: 1rem 3rem;
+    background-color: #4ca484;
+    color: #eeeeee;
+    cursor: pointer;
+    &:visited {
+        color: #fff; 
+    }
+  }
+`
 
 const MenuLateral= ({ isOpen }) => {
   return (
@@ -45,7 +67,11 @@ const MenuLateral= ({ isOpen }) => {
                 <li><a href="#">About</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Contact</a></li>
-              </ul>
+        </ul>
+        <DivLoginLateral>
+          <p>Sign up</p>
+          <a href="#">Login</a>
+        </DivLoginLateral>
             </NavLateral>
     </ContainerMenuLateral>
   )

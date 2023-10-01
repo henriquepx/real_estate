@@ -70,6 +70,8 @@ const MenuHamburger = styled.div`
   z-index: 999;
   @media (max-width: 1000px) {
     display: block;
+    position: absolute;
+    right: 4%;
   }
   span {
     display: block;

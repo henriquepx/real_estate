@@ -100,9 +100,6 @@ const ContainerCommentary = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     @media (max-width: 768px) {
-        grid-template-columns: 1fr 1fr;
-    }
-    @media (max-width: 500px) {
         grid-template-columns: 1fr;
     }
 `
