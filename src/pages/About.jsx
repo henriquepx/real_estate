@@ -52,7 +52,22 @@ const ButtonAbout = styled.a`
 `
 const ImgHouseAbout = styled.div`
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        @media (max-width: 630px) {
+            width: 80%;
+        }
+    }
 `
+
+
+
+
+
+
 const FaixaAbou1 = styled.div`
     position: absolute;
     top: -20%;
@@ -65,6 +80,9 @@ const FaixaAbou1 = styled.div`
     @media (max-width: 1024px) {
         left: 60%;
         width: 30%;
+    }
+    @media (max-width: 630px) {
+            display: none;
     }
     p {
         font-size: 3rem;
@@ -92,6 +110,9 @@ const FaixaAbou2 = styled.div`
     display: flex;
     align-items: center;
     gap: 60px;
+    @media (max-width: 450px) {
+        display: none;
+    }
     div {
         display: flex;
         align-items: center;
@@ -100,6 +121,9 @@ const FaixaAbou2 = styled.div`
             font-size: 3rem;
             color: var(--color-title);
             font-weight: 600;
+            @media (max-width: 600px) {
+                font-size: 1.5rem;
+            }
         }
         p {
             max-width: 5ch;
