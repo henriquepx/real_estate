@@ -42,6 +42,7 @@ const TextDiscover = styled.div`
     @media (max-width: 670px) {
         flex-direction: column;
         justify-content: flex-start;
+        align-items: initial;
     }
 `
 const LearnMore = styled.a`

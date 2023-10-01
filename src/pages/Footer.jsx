@@ -38,6 +38,10 @@ const DivFooter1 = styled.div`
         margin-bottom: .7rem;
     }
     div {
+        @media (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+        }
         input {
             padding: .7rem 1rem;
         }

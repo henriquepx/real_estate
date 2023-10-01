@@ -58,16 +58,10 @@ const ImgHouseAbout = styled.div`
     align-items: center;
     img {
         @media (max-width: 630px) {
-            width: 80%;
+            width: 100%;
         }
     }
 `
-
-
-
-
-
-
 const FaixaAbou1 = styled.div`
     position: absolute;
     top: -20%;
