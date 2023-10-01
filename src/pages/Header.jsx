@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import logo from '../assets/logo.png';
 import { useState } from 'react';
+import MenuLateral from '../components/MenuLateral';
 
 const HeaderP = styled.header `
     background-color: #F5F5F5;
@@ -95,6 +96,10 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
     
   return (
       <HeaderP>
@@ -113,11 +118,12 @@ const Header = () => {
                   <a href="#">Sign up</a>
                   <LinkHeaderLogin href="#">Login</LinkHeaderLogin>
               </DivHeader>
-              <MenuHamburger open={isOpen} onClick={() => { toggleMenu(); }}>
+              <MenuHamburger open={isOpen} onClick={toggleMenu}>
                 <span></span>
                 <span></span>
                 <span></span>
               </MenuHamburger>
+              <MenuLateral isOpen={isOpen} onClose={closeMenu} />
           </HeaderContainer>
     </HeaderP>
   )
