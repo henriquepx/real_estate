@@ -18,9 +18,11 @@ const HeaderContainer = styled.div`
     padding: 1rem 1.5rem;
     @media (max-width: 1000px) {
       padding: 1rem 1.5rem;
-    nav {
-      display: none;
-    }
+  }
+`
+const NavHeaderPrincipal = styled.nav`
+  @media (max-width: 1000px) {
+    display: none;
   }
 `
 const UlHeader = styled.ul`
@@ -105,7 +107,7 @@ const Header = () => {
       <HeaderP>
           <HeaderContainer>
               <img src={logo} alt="Logo" />
-              <nav>
+              <NavHeaderPrincipal>
                   <UlHeader>
                     <LiHeader><a href="#">Home</a></LiHeader>
                     <LiHeader><a href="#">Property</a></LiHeader>
@@ -113,7 +115,7 @@ const Header = () => {
                     <LiHeader><a href="#">Service</a></LiHeader>
                     <LiHeader><a href="#">Contact</a></LiHeader>
                   </UlHeader> 
-              </nav>
+              </NavHeaderPrincipal>
               <DivHeader>
                   <a href="#">Sign up</a>
                   <LinkHeaderLogin href="#">Login</LinkHeaderLogin>

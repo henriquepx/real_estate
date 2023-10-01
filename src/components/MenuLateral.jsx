@@ -10,17 +10,43 @@ const ContainerMenuLateral = styled.div`
   background-color: #F5F5F5;
   transition: left 0.4s ease-in-out;
   z-index: 998;
+  padding: 1.5rem 2rem;
+  h1 {
+    font-size: 2rem;
+    color: var(--color-green);
+    margin-bottom: 2rem;
+  }
+  @media (min-width: 1000px) {
+    display: none;
+  }
 `
+const NavLateral = styled.nav`
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    li {
+      a {
+        font-size: 1.2rem;
+        
+      }
+    }
+  }
+`
+
 
 const MenuLateral= ({ isOpen }) => {
   return (
       <ContainerMenuLateral isOpen={isOpen}>
             <h1>Menu</h1>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
+            <NavLateral>
+              <ul>
+                <li><a href="#">Property</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </NavLateral>
     </ContainerMenuLateral>
   )
 }
