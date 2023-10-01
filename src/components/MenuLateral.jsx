@@ -7,15 +7,15 @@ const ContainerMenuLateral = styled.div`
   left: ${props => (props.isOpen ? '0' : '-100%')};
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #F5F5F5;
   transition: left 0.4s ease-in-out;
   z-index: 998;
 `
 
-const MenuLateral= ({ isOpen, onClose }) => {
+const MenuLateral= ({ isOpen }) => {
   return (
       <ContainerMenuLateral isOpen={isOpen}>
-          <button onClick={onClose}>Fechar</button>
+            <h1>Menu</h1>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -26,8 +26,7 @@ const MenuLateral= ({ isOpen, onClose }) => {
 }
 
 MenuLateral.propTypes = {
-    isOpen: PropTypes.bool.isRequired, // isOpen should be a boolean and is required
-    onClose: PropTypes.func.isRequired, // onClose should be a function and is required
+    isOpen: PropTypes.bool.isRequired, 
   }
 
 export default MenuLateral

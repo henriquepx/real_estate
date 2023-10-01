@@ -16,6 +16,7 @@ const MainSize = styled.div`
     display: flex;
     flex-direction: column;
     padding: 5rem 1.5rem 0rem 1.5rem;
+    z-index: 10;
     h1 {
         color: var(--color-title);
         font-weight: 550;
@@ -52,8 +53,11 @@ const ImgCasaMain = styled.img`
     right: 0;
     bottom: 0%;
     width: 53%;
-    @media (max-width: 1000px) {
-        width: 100%;
+    @media (min-width: 600px) and (max-width: 1000px) {
+        width: 60%;
+    }
+    @media (max-width: 600px) {
+        width: 90%;
     }
 `
 const DivTabsBuyRent = styled.div`
@@ -115,11 +119,11 @@ const ButtonBuscar = styled.button`
 
 const Main = () => {
 
-  const [activeTab, setActiveTab] = useState('Buy');
+    const [activeTab, setActiveTab] = useState(null);
 
-  const handleTabClick = (tab) => {
+    const handleTabClick = (tab) => {
       setActiveTab(tab);
-  };
+    };
     
   return (
       <MainContainer>
@@ -132,7 +136,7 @@ const Main = () => {
                     <TabOption active={activeTab === 'Buy'} onClick={() => handleTabClick('Buy')}>Buy</TabOption>
                     <TabOption active={activeTab === 'Rent'} onClick={() => handleTabClick('Rent')}>Rent</TabOption>
                 </TabContainer>
-                <ContentContainer active={activeTab === 'Buy'}>
+                <ContentContainer active={activeTab !== null}>
                     <DropDownMain>
                           <h2>Location</h2>
                           <div>
@@ -156,7 +160,7 @@ const Main = () => {
                       </DropDownMain>
                       <ButtonBuscar>Search</ButtonBuscar>
                 </ContentContainer>
-                <ContentContainer active={activeTab === 'Rent'}>
+                <ContentContainer active={activeTab !== null}>
                 <DropDownMain>
                           <h2>Location</h2>
                           <div>
