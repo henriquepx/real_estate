@@ -16,7 +16,8 @@ const TitleDiscover = styled.h1`
     font-size: 3rem;
     margin: 3rem 0rem 2rem 0rem;
     @media (max-width: 500px) {
-        text-align: center
+        text-align: center;
+        font-size: 2rem;
     }
 `
 const SubtitleDiscover = styled.h2`
@@ -26,7 +27,7 @@ const SubtitleDiscover = styled.h2`
     text-transform: uppercase;
     margin-left: 1.5rem;
     @media (max-width: 500px) {
-        text-align: center
+        text-align: center;
     }
 `
 const DiscoverSize = styled.div`
@@ -37,7 +38,7 @@ const DiscoverSize = styled.div`
     display: flex;
     flex-direction: column;
     @media (max-width: 1440px) {
-        padding-left: 1.2rem;
+        padding:  0rem 1.2rem;
     }
 `
 const TextDiscover = styled.div`
