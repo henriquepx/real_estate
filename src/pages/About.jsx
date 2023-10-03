@@ -1,7 +1,30 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import imghouse from '../assets/bgabout.png';
 import okaysimbol from '../assets/ok.png';
 import starmini from '../assets/starmini.png';
+
+const slideFromLeft = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+const slideFromRight = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
 
 const AboutContainer = styled.div`
     height: 100%;
@@ -37,6 +60,7 @@ const SubtitleAbout = styled.h2`
     margin-left: 1.5rem;
 `
 const TextAbout = styled.div`
+    animation: ${slideFromRight} 1s ease-in-out;
     p {
         color: var(--color-description);
         max-width: 50ch;
@@ -56,6 +80,7 @@ const ImgHouseAbout = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: ${slideFromLeft} 1s ease-in-out;
     img {
         @media (max-width: 630px) {
             width: 100%;
