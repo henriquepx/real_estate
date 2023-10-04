@@ -15,7 +15,7 @@
 
 # Real Estate Project | 
 
-![Real Estate Logo](./src/readme-bg.jpg)
+![Real Estate Logo](https://github.com/henriquepx/real_estate/blob/main/src/assets/readme-bg.jpg)
 
 Welcome to the Real Estate project repository! This project was developed to consolidate knowledge in React, improve styling skills using Styled Components and create a responsive web application for a fictitious real estate company.
 
