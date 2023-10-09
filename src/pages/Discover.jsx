@@ -55,6 +55,7 @@ const LearnMore = styled.a`
     gap: 10px;
     margin-top: 1rem;
     cursor: pointer;
+    width: 123px;
 
     font-weight: 500;
     position: relative;

@@ -7,6 +7,9 @@ const MainContainer = styled.div`
     height: 100vh;
     background-color: #F5F5F5;
     position: relative;
+    @media (max-width: 450px) {
+        height: 90vh;
+    }
 `
 const MainSize = styled.div`
     max-width: 1500px;
