@@ -15,7 +15,7 @@
 
 # Imobiliária |
 
-![Real Estate Logo](./src/readme-bg.jpg)
+![Real Estate Logo](https://github.com/henriquepx/real_estate/blob/main/src/assets/readme-bg.jpg)
 
 Bem-vindo ao repositório do projeto Real Estate! Este projeto foi desenvolvido para consolidar conhecimentos em React, aprimorar habilidades de estilização usando Styled Components e criar um aplicativo web responsivo para uma imobiliária fictícia.
 
